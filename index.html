@@ -124,6 +124,12 @@
         .lh-tight {
             line-height: 1.25;
         }
+        .scrollable-container {
+            height: 400px; /* Здесь указывается высота контейнера */
+            overflow: auto; /* Это свойство добавляет прокрутку */
+            border: 1px solid #ccc; /* Добавим границу для наглядности */
+            padding: 10px; /* Добавим отступы */
+        }
     </style>
 
 </head>
@@ -358,6 +364,70 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-15">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Номер</th>
+                            <th scope="col">Название товара</th>
+                            <th scope="col">Цена за штуку</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Итоговая сумма</th>
+                            <th scope="col">Статус заказа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>MacBook</td>
+                            <td>99990.00</td>
+                            <td>1</td>
+                            <td>99990.00</td>
+                            <td>
+                                <div class="alert alert-primary" role="alert">
+                                    новый
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>iPhone</td>
+                            <td>79990.00</td>
+                            <td>1</td>
+                            <td>79990.00</td>
+                            <td>
+                                <div class="alert alert-warning" role="alert">
+                                    обработка
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>iPad</td>
+                            <td>49990.00</td>
+                            <td>1</td>
+                            <td>49990.00</td>
+                            <td>
+                                <div class="alert alert-success" role="alert">
+                                    обработан
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>AirPods</td>
+                            <td>19990.00</td>
+                            <td>1</td>
+                            <td>19990.00</td>
+                            <td>
+                                <div class="alert alert-danger" role="alert">
+                                    отмена
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                         </div>
                     </div>
                 </div>
