@@ -124,6 +124,12 @@
         .lh-tight {
             line-height: 1.25;
         }
+        .scrollable-container {
+            height: 400px; /* Здесь указывается высота контейнера */
+            overflow: auto; /* Это свойство добавляет прокрутку */
+            border: 1px solid #ccc; /* Добавим границу для наглядности */
+            padding: 10px; /* Добавим отступы */
+        }
     </style>
 
 </head>
@@ -281,7 +287,147 @@
                                 Email support,
                                 Help center access
                             </p>
-                            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Купить</button>
+                            <button type="button" class="w-100 btn btn-lg btn-success">Купить</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <form>
+                                <div class="mb-3">
+                                    <label for="exampleInput" class="form-label">Имя</label>
+                                    <input type="text" class="form-control" id="exampleInput"
+                                           placeholder="Введите имя ">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1"
+                                           aria-describedby="emailHelp" placeholder="Введите email">
+                                </div>
+                                <button type="submit" class="w-50 btn-lg btn  btn-success">Отправить</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="card mb-3">
+                        <h2 class="h2 text-center">FAQ</h2>
+                        <div class="card-body">
+                            <div class="accordion" id="faqAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="false"
+                                                aria-controls="collapseOne">
+                                            Как купить?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show"
+                                         aria-labelledby="headingOne"
+                                         data-bs-parent="#faqAccordion">
+                                        <div class="card card-body">
+                                            Нажать кнопку "Купить".
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseTwo" aria-expanded="false"
+                                                aria-controls="collapseTwo">
+                                            Как доставить?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                         aria-labelledby="headingTwo"
+                                         data-bs-parent="#faqAccordion">
+                                        <div class="card card-body">
+                                            Почтой России.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="btn btn-link" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="false"
+                                                aria-controls="collapseThree">
+                                            Какая гарантия?
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                         aria-labelledby="headingThree"
+                                         data-bs-parent="#faqAccordion">
+                                        <div class="card card-body">
+                                            Честное слово.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-15">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Номер</th>
+                            <th scope="col">Название товара</th>
+                            <th scope="col">Цена за штуку</th>
+                            <th scope="col">Количество</th>
+                            <th scope="col">Итоговая сумма</th>
+                            <th scope="col">Статус заказа</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>MacBook</td>
+                            <td>99990.00</td>
+                            <td>1</td>
+                            <td>99990.00</td>
+                            <td>
+                                <div class="alert alert-primary" role="alert">
+                                    новый
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>iPhone</td>
+                            <td>79990.00</td>
+                            <td>1</td>
+                            <td>79990.00</td>
+                            <td>
+                                <div class="alert alert-warning" role="alert">
+                                    обработка
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>iPad</td>
+                            <td>49990.00</td>
+                            <td>1</td>
+                            <td>49990.00</td>
+                            <td>
+                                <div class="alert alert-success" role="alert">
+                                    обработан
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>AirPods</td>
+                            <td>19990.00</td>
+                            <td>1</td>
+                            <td>19990.00</td>
+                            <td>
+                                <div class="alert alert-danger" role="alert">
+                                    отмена
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
                         </div>
                     </div>
                 </div>
